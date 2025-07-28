@@ -136,27 +136,30 @@ In your project root, where `main.lua` resides, you can run `love .` in your ter
 Whilst it wouldn't be useful for `Love` games, you can install either `Lua`  or `LuaJIT` directly for windows and run `lua main.lua` or `luajit main.lua`. The difference between `Lua` and `LuaJIT` is that `Lua` interprets bytecode, whereas `LuaJIT` translates to machine code. `LuaJIT` should be considerably faster than `Lua`, but the actual `.lua` scripts you write should be compatible with both
 
 # Setting Up VSCode for Lua and Löve2D
-You don't *need* to set up `VSCode` specifically for `Love`, but to get type hints it's best to follow some of the processes below. The most important extension is the `Lua` extension by `sumneko`
+You don't *need* to set up `VSCode` specifically for `Love`, but to get type hints it's best to follow some of the suggestsions below. The most important extension is the `Lua` extension by `sumneko`
 
 ## Extensions for VSCode
 - `Lua` => The `Lua` Language Server for type hints
     - [sumneko.lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
-- `Lua Debug` => 
+- `Lua Debug` => Debugger for `.lua` scripts, allows breakpoints and the `Debug` option in the top right of a `.lua` file, works with `Lua` and `LuaJIT`
     - [actboy168.lua-debug](https://marketplace.visualstudio.com/items?itemName=actboy168.lua-debug)
-- `vscode-lua` =>
+- `vscode-lua` => Adds autocompletion, error checking, linting, and formatting for `.lua` files
     - [trixnz.vscode-lua](https://marketplace.visualstudio.com/items?itemName=trixnz.vscode-lua)
-- `vscode-lua-format` =>
+- `vscode-lua-format` => Adds a formatter for `.lua` files
     - [Koihik.vscode-lua-format](https://marketplace.visualstudio.com/items?itemName=Koihik.vscode-lua-format)
-- `Image preview` =>
+- `Image preview` => Shows image previews in any file where an image file path is detected, eg. `./assets/image.png`, shows the preview on hover and a small icon in the `VSCode` gutter on the left
     - [kisstkondoros.vscode-gutter-preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
-- `Love2d Snippets` =>
+- `Love2d Snippets` => Adds snippets specific to `Love2D`
     - [pixelwar.love2dsnippets](https://marketplace.visualstudio.com/items?itemName=pixelwar.love2dsnippets)
-- `Love2D Support` =>
-    - [pixelbyte-studios.pixelbyte-love2d](pixelbyte-studios.pixelbyte-love2d)
-- `Path Autocomplete` =>
+- `Love2D Support` => Allows you to run `Love2D` projects directly from `VSCode`, adds intellisense for the `Love2D` API, adds an option to debug, in the status bar, to open a terminal alongside the game 
+    - [pixelbyte-studios.pixelbyte-love2d](https://marketplace.visualstudio.com/items?itemName=pixelbyte-studios.pixelbyte-love2d)
+- `Path Autocomplete` => Autocompletes paths, for instance those written in strings  eg. `./thin` will recommend `./things` if it exists locally
     - [ionutvmi.path-autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete)
 
-A version of the above for your workspace's `.vscode/extensions.json` can be found below
+> [!TIP]
+> With the above setup you may have multiple formatters installed, `VSCode` will allow you to pick a default when you hit `Alt + Shift + F`
+
+A version of the above for the workspace's `.vscode/extensions.json` can be found below
 ```json
 {
 	// Extension Recommendations for Love2D
@@ -179,7 +182,7 @@ A version of the above for your workspace's `.vscode/extensions.json` can be fou
 - `Ctrl + Shift + P` to open the `VSCode` command palette
 - Find and open `Lua: Open Addon Manager` (`lua.addon_manager.open`)
 - Search for and install `LÖVE`
-- Add the snippet below to your workspace's `.vscode/settings.json`
+- Add the snippet below to the workspace's `.vscode/settings.json`
 ```json
 {
     "Lua.workspace.library": [
@@ -203,7 +206,7 @@ A version of the above for your workspace's `.vscode/extensions.json` can be fou
 > In the unlikely event that the `LÖVE` addon is not installable, you can download a type hinted version of `Love` [here](https://github.com/LuaCATS/love2d/tree/98f7684525a6e866ffa6df449b7aef406a807dae). If you add this anywhere in your workspace it will be picked up by the `Lua` language server
 
 # Packaging Your Game
-To package your game to a single file, simply add it to a `.zip` archive, through whatever means you have, and change the extension to `.love`. You can open `.love` files in `love.exe`. The main purpose of this is to make your game easily distributable, and to make it executable as a single file.
+To package your game to a single file, simply add it to a `.zip` archive, through whatever means you have, and change the extension to `.love`. You can open `.love` files in `love.exe`. The main purpose of this is to make your game easily distributable, and to make it executable as a single file
 
 # Miscellaneous
 - Beyond the information above there is a huge amount to learn about `Löve2D`
