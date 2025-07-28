@@ -1,5 +1,5 @@
 # Overview
-This project aims to be a template for a basic `LÖVE2D` game, as well as a teaching tool, primarily for myself. It contains most of the information I picked up along the way when trying to set up a clean environment for developing `LÖVE2D` games.
+This project aims to be a template for a basic `LÖVE2D` game, as well as a teaching tool, primarily for myself. It contains most of the information I picked up along the way when trying to set up a clean environment for developing `LÖVE2D` games
 
 # What is LÖVE2D?
 [LÖVE2D](https://en.wikipedia.org/wiki/L%C3%B6ve_(game_framework)), also known as `LÖVE` or simply `LÖVE`, is a game framework for `Lua`. It provides a simple layer / API wrapper for interacting with the user's system, giving access to graphics, audio and input.
@@ -70,7 +70,7 @@ There are two special files in a `LÖVE` project, `conf.lua` and `main.lua`
 - Overwrites / defines specific `LÖVE` methods
     - `function love.conf(t)`
 
-An example `conf.lua` file can be found below. It should be mostly self explanatory from the function docstrings. Because `conf.lua` runs before `main.lua` the global variables it defines should be usable when `main.lua` is executed
+An example `conf.lua` file can be found below. It should be mostly self-explanatory from the function docstrings. Because `conf.lua` runs before `main.lua` the global variables it defines should be usable when `main.lua` is executed
 
 ```lua
 -- < ------------------------------------------------------
@@ -241,8 +241,10 @@ A version of the above for the workspace's `.vscode/extensions.json` can be foun
 > [!NOTE]
 > - In the unlikely event that the `LÖVE` addon is not installable, you can download a type hinted version of `LÖVE` [here](https://github.com/LuaCATS/love2d/tree/98f7684525a6e866ffa6df449b7aef406a807dae). If you add this anywhere in your workspace it will be picked up by the `Lua` language server
 
-# Packaging Your Game
-To package your game to a single file, simply add it to a `.zip` archive, through whatever means you have, and change the extension to `.love`. You can open `.love` files in `love.exe`. The main purpose of this is to make your game easily distributable, and to make it executable as a single file
+# Packaging Your Game to a Single `.love` File
+The `.love` extension is a game archive, that contains all the files needed to run your game. You can open `.love` files directly in `love.exe`. The main purpose of `.love` files is to make your game easily distributable.
+
+To package your game into a single file, simply add it to a `.zip` archive, through whatever means you have, and change the extension to `.love`
 
 # Miscellaneous
 - Beyond the information above there is a huge amount to learn about `LÖVE2D`
