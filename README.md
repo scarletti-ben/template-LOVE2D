@@ -1,12 +1,16 @@
 # Overview
-This project aims to be a template for a basic `LÖVE2D` game, as well as a teaching tool, primarily for my self. It contains most of the information I picked up along the way when trying to set up a clean  environment for developing `LÖVE2D` games.
+This project aims to be a template for a basic `LÖVE2D` game, as well as a teaching tool, primarily for myself. It contains most of the information I picked up along the way when trying to set up a clean  environment for developing `LÖVE2D` games.
 
 # What is LÖVE2D?
-[LÖVE2D](https://en.wikipedia.org/wiki/L%C3%B6ve_(game_framework)), also known as `LÖVE` or simply `LÖVE`, is a game framework for `Lua`. It provides a simple layer / API wrapper for interacting with the system, giving access to system graphics, audio and input. 
+[LÖVE2D](https://en.wikipedia.org/wiki/L%C3%B6ve_(game_framework)), also known as `LÖVE` or simply `LÖVE`, is a game framework for `Lua`. It provides a simple layer / API wrapper for interacting with the user's system, giving access to graphics, audio and input.
 
-Because `LÖVE2D` is a framework and not a game engine, a lot of the heavy lifting has to be done by you, with the standard library being much smaller than similar languages, such as `Python`.
+Because `LÖVE2D` is a framework and not a game engine, a lot of the heavy lifting has to be done by you, with the standard library being much smaller than similar languages, such as `Python`. For many that lack of hand-holding is a bonus
 
-For many that lack of hand-holding is a bonus. At the very least the bonuses are applications that are fast and incredibly small, a syntax that is human-readable, and compatibility with many different platforms
+The most notable bonuses of the framework are as follows:
+- A language with a syntax that is human-readable
+- Applications that are fast
+- Applications that are incredibly small and easily packaged
+- Aplications that are compatible with many different platforms
 
 # Installing LÖVE2D
 - Navigate to the [LÖVE2D](https://love2d.org/) site
@@ -18,7 +22,7 @@ For many that lack of hand-holding is a bonus. At the very least the bonuses are
     - Allows you to use `love .` in your terminal to run `love.exe` in current directory
 
 # Project Structure of a Basic LÖVE2D Game
-The project structure of a basic `LÖVE2D` game can be seen below
+The project structure of a basic `LÖVE2D` game can be seen below, and should be almost identical to the one in this project
 ```text
 workspace/
 ├── game/
