@@ -21,12 +21,28 @@ The most notable bonuses of the framework are as follows:
     - Default is `C:\Program Files\LOVE\love.exe`
     - Allows you to use `love .` in your terminal to run `love.exe` in current directory
 
-# Installing this Repository and Running LÖVE2D
-- Ensure that `Git` is installed on your system
+# Installing this Repository
+You can install this repository via one of the methods below, the easiest for new users is probably via the [ZIP](#download-zip-file) method
+
+## Download ZIP File
+- Click the green "<> Code" button to the right of the repository
+- Cick "Download ZIP"
+- Find the `.zip` file and extract it
+- Inside the extracted files, navigate to `template-LOVE2D/game`
+- Open your terminal and run `love .`
+
+## With Git Installed
 - In your terminal, navigate to the workspace you want to use
 - Run `git clone https://github.com/scarletti-ben/template-LOVE2D`
 - Navigate to `template-LOVE2D/game`
 - Run `love .`
+
+## Create a Copy of this Template (Advanced)
+- Click the green "Use this template" button in the top right of the repository
+- Select "Create a new repository"
+
+> [!Note]
+> This method assumes that you have a `GitHub` account and that you know what to do with the repository once you copy it!
 
 # Project Structure of a Basic LÖVE2D Game
 The project structure of a basic `LÖVE2D` game can be seen below, and should be almost identical to the one in this project
