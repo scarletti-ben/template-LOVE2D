@@ -7,16 +7,15 @@ For many that lack of hand-holding is a bonus. At the very least the bonuses are
 
 # Installing Löve2D
 - Navigate to the [Löve2D](https://love2d.org/) site
-- Download either `64-bit installer` or `64-bit zipped`
 - Follow installer instructions, or extract `.zip`
-- Ensure `.love` files are set to open in `love.exe`
-- [Optional] Open `love.exe` it should show a "no game" message
-- [Optional] Add `love.exe` directory to `PATH` via `System Environment Variables`
-    - Should be at `C:\Program Files\LOVE\love.exe`
+- Download either `64-bit installer` or `64-bit zipped`
+- Run the installer or extract zip archive
+- Add `love.exe` directory to `PATH` via `System Environment Variables`
+    - Default is `C:\Program Files\LOVE\love.exe`
     - Allows you to use `love .` in your terminal to run `love.exe` in current directory
 
 # Project Structure of a Basic Löve2D Game
-The project structure of the most basic `Löve2D` (aka `Love`) game can be seen below
+The project structure of a basic `Löve2D` (aka `Love`) game can be seen below
 ```text
 workspace/
 ├── game/
@@ -38,7 +37,8 @@ There are two special files in a `Love` project, `main.lua` and `conf.lua`
         - `function love.update(dt)`
         - `function love.draw()`
 
-Beyond `main.lua` and `conf.lua`, which need to be in the root of the project, you can set up the project structure in any way you wish. The `assets/` directory in the example project is not a special directory, but is a convention, and helpful for storing and accessing game assets
+> [!NOTE]
+> Beyond `main.lua` and `conf.lua`, which need to be in the root of the project, you can set up the project structure in any way you wish. The `assets/` directory in the example project is not a special directory, but is a convention, and helpful for storing and accessing game assets
 
 ## The `conf.lua` File
 An example `conf.lua` file can be found below. It should be mostly self explanatory from the function docstrings. Because `conf.lua` runs before `main.lua` the global variables it defines should be usable when `main.lua` is executed
@@ -201,6 +201,9 @@ A version of the above for your workspace's `.vscode/extensions.json` can be fou
 
 > [!NOTE]
 > In the unlikely event that the `LÖVE` addon is not installable, you can download a type hinted version of `Love` [here](https://github.com/LuaCATS/love2d/tree/98f7684525a6e866ffa6df449b7aef406a807dae). If you add this anywhere in your workspace it will be picked up by the `Lua` language server
+
+# Packaging Your Game
+To package your game to a single file, simply add it to a `.zip` archive, through whatever means you have, and change the extension to `.love`. You can open `.love` files in `love.exe`. The main purpose of this is to make your game easily distributable, and to make it executable as a single file.
 
 # Miscellaneous
 - Beyond the information above there is a huge amount to learn about `Löve2D`
