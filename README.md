@@ -1,12 +1,12 @@
-# Löve2D
-[Löve](https://en.wikipedia.org/wiki/L%C3%B6ve_(game_framework)) is a game framework for `Lua`. It provides a simple layer / API wrapper for interacting with the system, giving access to system graphics, audio and input. 
+# LÖVE2D
+[LÖVE2D](https://en.wikipedia.org/wiki/L%C3%B6ve_(game_framework)), also known as `LÖVE` or simply `LÖVE`, is a game framework for `Lua`. It provides a simple layer / API wrapper for interacting with the system, giving access to system graphics, audio and input. 
 
-Because `Löve` is a framework and not a game engine, a lot of the heavy lifting has to be done by you, with the standard library being much smaller than similar languages, such as `Python`.
+Because `LÖVE2D` is a framework and not a game engine, a lot of the heavy lifting has to be done by you, with the standard library being much smaller than similar languages, such as `Python`.
 
 For many that lack of hand-holding is a bonus. At the very least the bonuses are applications that are fast and incredibly small, a syntax that is human-readable, and compatibility with many different platforms
 
-# Installing Löve2D
-- Navigate to the [Löve2D](https://love2d.org/) site
+# Installing LÖVE2D
+- Navigate to the [LÖVE2D](https://love2d.org/) site
 - Follow installer instructions, or extract `.zip`
 - Download either `64-bit installer` or `64-bit zipped`
 - Run the installer or extract zip archive
@@ -14,8 +14,8 @@ For many that lack of hand-holding is a bonus. At the very least the bonuses are
     - Default is `C:\Program Files\LOVE\love.exe`
     - Allows you to use `love .` in your terminal to run `love.exe` in current directory
 
-# Project Structure of a Basic Löve2D Game
-The project structure of a basic `Löve2D` (aka `Love`) game can be seen below
+# Project Structure of a Basic LÖVE2D Game
+The project structure of a basic `LÖVE2D` game can be seen below
 ```text
 workspace/
 ├── game/
@@ -27,12 +27,12 @@ workspace/
 └── main.lua
 ```
 
-There are two special files in a `Love` project, `main.lua` and `conf.lua`
+There are two special files in a `LÖVE` project, `main.lua` and `conf.lua`
 - `conf.lua` is primarily for setting up the window and configuration of globals
-    - Overwrites /defines specific `Love` methods
+    - Overwrites /defines specific `LÖVE` methods
         - `function love.conf(t)`
-- `main.lua` is used for the main game loop and defining `Love` methods
-    - Overwrites / defines specific `Love` methods
+- `main.lua` is used for the main game loop and defining `LÖVE` methods
+    - Overwrites / defines specific `LÖVE` methods
         - `function love.load()`
         - `function love.update(dt)`
         - `function love.draw()`
@@ -127,16 +127,16 @@ end
 > One quirk of `Lua` is that instance methods accessed via `instance.method()` do not pass the instance as the first argument, whereas `instance:method` does pass it and can be thought of as `instance.method(instance)`
 
 # Testing a Löve2D Game
-In your project root, where `main.lua` resides, you can run `love .` in your terminal. This should run `Love` in the current directory using its embedded [`LuaJIT`](#lua-vs-luajit) compiler
+In your project root, where `main.lua` resides, you can run `love .` in your terminal. This should run `LÖVE` in the current directory using its embedded [`LuaJIT`](#lua-vs-luajit) compiler
 
 > [!NOTE]
-> You don't need `Lua` installed on your system for `Love` to run. `Love` comes pre-bundled with an embedded `LuaJIT` (just-in-time) runtime which parses and compiles `.lua` files to machine code at runtime, without you needing to think about the compilation process
+> You don't need `Lua` installed on your system for `LÖVE` to run. `LÖVE` comes pre-bundled with an embedded `LuaJIT` (just-in-time) runtime which parses and compiles `.lua` files to machine code at runtime, without you needing to think about the compilation process
 
 # Lua vs LuaJIT
-Whilst it wouldn't be useful for `Love` games, you can install either `Lua`  or `LuaJIT` directly for windows and run `lua main.lua` or `luajit main.lua`. The difference between `Lua` and `LuaJIT` is that `Lua` interprets bytecode, whereas `LuaJIT` translates to machine code. `LuaJIT` should be considerably faster than `Lua`, but the actual `.lua` scripts you write should be compatible with both
+Whilst it wouldn't be useful for `LÖVE` games, you can install either `Lua`  or `LuaJIT` directly for windows and run `lua main.lua` or `luajit main.lua`. The difference between `Lua` and `LuaJIT` is that `Lua` interprets bytecode, whereas `LuaJIT` translates to machine code. `LuaJIT` should be considerably faster than `Lua`, but the actual `.lua` scripts you write should be compatible with both
 
 # Setting Up VSCode for Lua and Löve2D
-You don't *need* to set up `VSCode` specifically for `Love`, but to get type hints it's best to follow some of the suggestsions below. The most important extension is the `Lua` extension by `sumneko`
+You don't *need* to set up `VSCode` specifically for `LÖVE`, but to get type hints it's best to follow some of the suggestsions below. The most important extension is the `Lua` extension by `sumneko`
 
 ## Extensions for VSCode
 - `Lua` => The `Lua` Language Server for type hints
@@ -203,7 +203,7 @@ A version of the above for the workspace's `.vscode/extensions.json` can be foun
 > The `_testing` directory added to the ignore list is not essential, but can be useful for files you don't want recognised by the workspace
 
 > [!NOTE]
-> In the unlikely event that the `LÖVE` addon is not installable, you can download a type hinted version of `Love` [here](https://github.com/LuaCATS/love2d/tree/98f7684525a6e866ffa6df449b7aef406a807dae). If you add this anywhere in your workspace it will be picked up by the `Lua` language server
+> In the unlikely event that the `LÖVE` addon is not installable, you can download a type hinted version of `LÖVE` [here](https://github.com/LuaCATS/love2d/tree/98f7684525a6e866ffa6df449b7aef406a807dae). If you add this anywhere in your workspace it will be picked up by the `Lua` language server
 
 # Packaging Your Game
 To package your game to a single file, simply add it to a `.zip` archive, through whatever means you have, and change the extension to `.love`. You can open `.love` files in `love.exe`. The main purpose of this is to make your game easily distributable, and to make it executable as a single file
@@ -215,15 +215,15 @@ To package your game to a single file, simply add it to a `.zip` archive, throug
 # Project Metadata
 ```yaml
 ---
-title: "Love2D and Lua"
+title: "LÖVE2D and Lua"
 date: "2025-07-28"
 # last_modified_at: ""
-description: "Learning the basics of Love2D and the Lua language"
+description: "Learning the basics of LÖVE2D and the Lua language"
 categories: [
   miscellaneous
 ]
 tags: [
-  coding, dev, gamedev, game development, lua, luajit, love, love2d, just in time compiler, jit, compilation, machine code, bytecode
+  coding, dev, gamedev, game development, lua, luajit, love, love2d, LÖVE2D, just in time compiler, jit, compilation, machine code, bytecode
 ]
 ---
 ```
