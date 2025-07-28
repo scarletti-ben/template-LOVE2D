@@ -1,4 +1,7 @@
-# LÖVE2D
+# Overview
+This project aims to be a template for a basic `LÖVE2D` game, as well as a teaching tool, primarily for my self. It contains most of the information I picked up along the way when trying to set up a clean  environment for developing `LÖVE2D` games.
+
+# What is LÖVE2D?
 [LÖVE2D](https://en.wikipedia.org/wiki/L%C3%B6ve_(game_framework)), also known as `LÖVE` or simply `LÖVE`, is a game framework for `Lua`. It provides a simple layer / API wrapper for interacting with the system, giving access to system graphics, audio and input. 
 
 Because `LÖVE2D` is a framework and not a game engine, a lot of the heavy lifting has to be done by you, with the standard library being much smaller than similar languages, such as `Python`.
