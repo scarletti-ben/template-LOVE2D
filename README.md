@@ -172,7 +172,7 @@ Whilst it wouldn't be useful for `LÖVE` games, you can install either `Lua`  or
 You don't *need* to set up `VSCode` specifically for `LÖVE`, but to get type hints it's best to follow some of the suggestions below. The most important extension is the `Lua` extension by `sumneko`
 
 ## Extensions for VSCode
-- `Lua` => The `Lua` Language Server for type hints
+- `Lua` => The `Lua` language server for type hints
     - [sumneko.lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
 - `Lua Debug` => Debugger for `.lua` scripts, allows breakpoints and the `Debug` option in the top right of a `.lua` file, works with `Lua` and `LuaJIT`
     - [actboy168.lua-debug](https://marketplace.visualstudio.com/items?itemName=actboy168.lua-debug)
@@ -190,7 +190,7 @@ You don't *need* to set up `VSCode` specifically for `LÖVE`, but to get type hi
     - [ionutvmi.path-autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete)
 
 > [!TIP]
-> With the above setup you may have multiple formatters installed, `VSCode` will allow you to pick a default when you hit `Alt + Shift + F`
+> - With the above setup you may have multiple formatters installed, `VSCode` will allow you to pick a default when you hit `Alt + Shift + F`
 
 A version of the above for the workspace's `.vscode/extensions.json` can be found below
 ```json
