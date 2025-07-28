@@ -41,7 +41,7 @@ You can install this repository via one of the methods below, the easiest for ne
     - Click the green "Use this template" button in the top right of the repository
     - Select "Create a new repository"
 
-> [!Note]
+> [!CAUTION]
 > - The "Create a Copy" method assumes that you have a `GitHub` account and that you know what to do with a repository once you copy it!
 
 # Project Structure of a Basic LÖVE2D Game
