@@ -1,0 +1,14 @@
+{
+    // Settings for sumneko.lua Lua Language Server
+    "Lua.workspace.library": [
+        "${addons}/love2d/module/library"
+    ],
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.runtime.special": {
+        "love.filesystem.load": "loadfile"
+    },
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.workspace.ignoreDir": [
+        "_testing"
+    ]
+}

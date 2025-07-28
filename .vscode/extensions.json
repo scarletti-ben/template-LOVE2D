@@ -1,0 +1,14 @@
+{
+	// Extension Recommendations for Love2D
+	// Find all recommended extensions in the store via @recommended
+	"recommendations": [
+		"sumneko.lua",
+		"actboy168.lua-debug",
+		"trixnz.vscode-lua",
+		"Koihik.vscode-lua-format",
+		"kisstkondoros.vscode-gutter-preview",
+		"pixelwar.love2dsnippets",
+		"pixelbyte-studios.pixelbyte-love2d",
+		"ionutvmi.path-autocomplete"
+	]
+}
