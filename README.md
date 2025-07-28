@@ -23,10 +23,10 @@ The most notable bonuses of the framework are as follows:
 
 # Installing this Repository and Running LÖVE2D
 - Ensure that `Git` is installed on your system
-- Navigate to the workspace you want to use
-- Run `git clone https://github.com/scarletti-ben/template-LOVE2D` in your terminal
-- Enter the directory
-- Run `love .` in your terminal
+- In your terminal, navigate to the workspace you want to use
+- Run `git clone https://github.com/scarletti-ben/template-LOVE2D`
+- Navigate to `template-LOVE2D/game`
+- Run `love .`
 
 # Project Structure of a Basic LÖVE2D Game
 The project structure of a basic `LÖVE2D` game can be seen below, and should be almost identical to the one in this project
