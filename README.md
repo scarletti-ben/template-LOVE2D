@@ -10,7 +10,7 @@ The most notable bonuses of the framework are as follows:
 - A language with a syntax that is human-readable
 - Applications that are fast
 - Applications that are incredibly small and easily packaged
-- Aplications that are compatible with many different platforms
+- Applications that are compatible with many different platforms
 
 # Installing LÖVE2D
 - Navigate to the [LÖVE2D](https://love2d.org/) site
@@ -26,7 +26,7 @@ You can install this repository via one of the methods below, the easiest for ne
 
 ## Download ZIP File
 - Click the green "<> Code" button to the right of the repository
-- Cick "Download ZIP"
+- Click "Download ZIP"
 - Find the `.zip` file and extract it
 - Inside the extracted files, navigate to `template-LOVE2D/game`
 - Open your terminal and run `love .`
@@ -156,7 +156,7 @@ end
 > [!NOTE]
 > One quirk of `Lua` is that instance methods accessed via `instance.method()` do not pass the instance as the first argument, whereas `instance:method` does pass it and can be thought of as `instance.method(instance)`
 
-# Testing a Löve2D Game
+# Testing a LÖVE2D Game
 In your project root, where `main.lua` resides, you can run `love .` in your terminal. This should run `LÖVE` in the current directory using its embedded [`LuaJIT`](#lua-vs-luajit) compiler
 
 > [!NOTE]
@@ -165,8 +165,8 @@ In your project root, where `main.lua` resides, you can run `love .` in your ter
 # Lua vs LuaJIT
 Whilst it wouldn't be useful for `LÖVE` games, you can install either `Lua`  or `LuaJIT` directly for windows and run `lua main.lua` or `luajit main.lua`. The difference between `Lua` and `LuaJIT` is that `Lua` interprets bytecode, whereas `LuaJIT` translates to machine code. `LuaJIT` should be considerably faster than `Lua`, but the actual `.lua` scripts you write should be compatible with both
 
-# Setting Up VSCode for Lua and Löve2D
-You don't *need* to set up `VSCode` specifically for `LÖVE`, but to get type hints it's best to follow some of the suggestsions below. The most important extension is the `Lua` extension by `sumneko`
+# Setting Up VSCode for Lua and LÖVE2D
+You don't *need* to set up `VSCode` specifically for `LÖVE`, but to get type hints it's best to follow some of the suggestions below. The most important extension is the `Lua` extension by `sumneko`
 
 ## Extensions for VSCode
 - `Lua` => The `Lua` Language Server for type hints
@@ -207,7 +207,7 @@ A version of the above for the workspace's `.vscode/extensions.json` can be foun
 }
 ```
 
-### Adding the Löve2D Addon to the Lua Language Server
+### Adding the LÖVE2D Addon to the Lua Language Server
 - Ensure you have `Lua` (`sumneko.lua`) installed in `VSCode`
 - `Ctrl + Shift + P` to open the `VSCode` command palette
 - Find and open `Lua: Open Addon Manager` (`lua.addon_manager.open`)
@@ -239,7 +239,7 @@ A version of the above for the workspace's `.vscode/extensions.json` can be foun
 To package your game to a single file, simply add it to a `.zip` archive, through whatever means you have, and change the extension to `.love`. You can open `.love` files in `love.exe`. The main purpose of this is to make your game easily distributable, and to make it executable as a single file
 
 # Miscellaneous
-- Beyond the information above there is a huge amount to learn about `Löve2D`
+- Beyond the information above there is a huge amount to learn about `LÖVE2D`
     - Whilst these notes will likely never be read by anyone else, they should be useful to me to come back to
 
 # Project Metadata
