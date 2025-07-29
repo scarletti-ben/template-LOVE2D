@@ -15,9 +15,9 @@ PATHS = {
 -- < Core Love Functions
 -- < ------------------------------------------------------
 
--- Configure window properties
--- - Called once by Love at the beginning of the game
--- @param t table Configuration table provided by Love
+--- Configure window properties
+--- - Called once by Love at the beginning of the game
+--- @param t table Configuration table provided by Love
 function love.conf(t)
    t.window.title = "Game"
    t.window.width = W
